@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: timer_development
+  username: michal2000
+  password: michal2000
+
+
+test:
+  <<: *default
+  database: timer_test
+  username: michal2000
+  password: michal2000
+
+
+production:
+  <<: *default
+  database: timer_production
+  username: root
+  password: michal2000
