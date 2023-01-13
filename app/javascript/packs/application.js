@@ -1,1 +1,3 @@
-console.log('Hello World from Webpacker')
+//= require jquery
+
+// console.log('Hello World from Webpacker')
