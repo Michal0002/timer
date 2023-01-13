@@ -1,9 +1,9 @@
 <nav class = "navbar-callopse">
     <div>
         <ul class = "navbar navopac">
-           <li class = "nav-link"> <%= link_to "Christmas #{$year}", root_path, class: "nav-item" %> </li>
-           <li class = "nav-link"> <%= link_to "New Year #{$year}", root_path, class: "nav-item"%> </li>
-           <li class = "nav-link"> <%= link_to "Your event", root_path, class: "nav-item" %> </li>
+           <li class = "nav-link"> <%= link_to "Christmas #{$year}", christmas_event_home_index_path, class: "nav-item" %></li>
+           <li class = "nav-link"> <%= link_to "New Year #{$year}", new_year_event_home_index_path, class: "nav-item"%></li>
+           <li class = "nav-link"> <%= link_to "Your event", new_event_home_index_path, class: "nav-item" %></li>
         </ul>
     </div>
 </nav>
